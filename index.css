@@ -115,7 +115,29 @@ HEADER COMPONENT DESKTOP
 /*---------------------------------------------------------
 PRINCIPAL COMPONENT DESKTOP
 ----------------------------------------------------------*/
+#app{
+    padding:2rem;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.containAvo img{
+    margin-bottom:1rem;
+}
 
+.containAvo{
+    margin:1rem;
+    border:.1rem dashed var(--relevante);
+    background:var(--main-color);
+    text-align:center;
+    color:white;
+    padding-bottom:1rem;
+}
+
+.descriptionAvo{
+    font-size:2rem;
+}
 
 
 /*---------------------------------------------------------
@@ -242,6 +264,26 @@ HEADER - MOBIL
 /*---------------------------------------------------------
 P R I N C I P A L
 ----------------------------------------------------------*/
+.containAvo{
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    margin:1rem 1rem;
+    border-radius:1rem;
+    border:.1rem dashed var(--relevante);
+    font-size:2rem;
+    color:white;
+    text-align:center;
+}
+
+.nameAvocado{
+    font-size:2rem;
+}
+
+.containAvo img{
+    margin-bottom:1rem;
+}
+
 
 
 /*---------------------------------------------------------

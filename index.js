@@ -4,19 +4,9 @@ console.log('Ok')
 const baseUrl = 'https://platzi-avo.vercel.app'
 const appNode = document.querySelector('#app')
 
-appNode.addEventListener('click',
-	(evento)=>{
-		if(evento.target.nodeName === 'H1'){
-			appNode.append(document.createElement('h5'))
-		}
-	}
-);
-
-
-
 // API de Internacionalizacion
 const formatPrice = (price) =>{
-	const newPrice = new window.Intl.NumberFormat('en-EN',{
+	const newPrice = new window.Intl.NumberFormat('en-US',{
 		style:'currency',
 		currency:'USD'
 	}).format(price)
@@ -41,6 +31,7 @@ window.fetch(`${baseUrl}/api/avo`)
 		const title = document.createElement('h2')
 		title.className="nameAvocado"
 		title.textContent = e.name
+
 
 		const price = document.createElement('p')
 		price.className="descriptionAvo"
